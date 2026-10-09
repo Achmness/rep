@@ -1,0 +1,215 @@
+/* ===== RESET & BASE STYLES ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.6;
+    color: #ffffff;
+}
+
+/* ===== HEADER SECTION ===== */
+.header {
+    background-color: #0E1424;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    padding: 0;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px 60px;
+    min-height: 102px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-left: 60px;
+    margin-top: 0px;
+}
+
+.logo-image {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0px;
+}
+
+.logo-image img {
+    height: 50px;
+    width: auto;
+    display: block;
+    cursor: pointer;
+}
+
+/* ===== NAVIGATION ===== */
+.nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    gap: 45px;
+    align-items: center;
+}
+
+.nav-item {
+    display: flex;
+}
+
+.nav-link {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0.3px;
+    transition: opacity 0.3s ease;
+}
+
+.nav-link:hover {
+    opacity: 0.8;
+}
+
+/* ===== HERO SECTION ===== */
+.hero {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin-top: 90px;
+}
+
+.hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.hero-background::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(26, 35, 50, 0.4);
+    z-index: 2;
+}
+
+.hero-background img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 3;
+    text-align: center;
+    padding: 40px;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+.hero-subtitle {
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    color: #ffffff;
+    opacity: 0.95;
+}
+
+.hero-title {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 72px;
+    font-weight: 400;
+    line-height: 1.2;
+    color: #ffffff;
+    max-width: 900px;
+    letter-spacing: 0.5px;
+}
+
+.hero-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    color: #ff6b35;
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    cursor: pointer;
+    margin-top: 15px;
+    padding: 12px 0;
+    letter-spacing: 0.3px;
+    transition: gap 0.3s ease;
+}
+
+.hero-cta:hover {
+    gap: 15px;
+}
+
+.arrow {
+    font-size: 20px;
+    display: inline-flex;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.hero-cta:hover .arrow {
+    transform: translateX(5px);
+}
+
+/* ===== RESPONSIVE FLEXBOX BEHAVIOR ===== */
+/* Using flex-wrap and flex properties for natural responsiveness */
+.header-container {
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.nav-list {
+    flex-wrap: wrap;
+    gap: clamp(20px, 3vw, 45px);
+}
+
+.hero-title {
+    font-size: clamp(36px, 5vw, 72px);
+}
+
+.hero-subtitle {
+    font-size: clamp(16px, 2vw, 20px);
+}
+
+.hero-cta {
+    font-size: clamp(16px, 1.8vw, 18px);
+}
+
+.nav-link {
+    font-size: clamp(16px, 1.8vw, 18px);
+}
+
+.header-container {
+    padding: clamp(15px, 3vw, 20px) clamp(30px, 5vw, 60px);
+}
