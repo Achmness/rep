@@ -36,7 +36,7 @@
         </div>
     </header>
 
-    <section class="hero">
+    <section class="hero" id="home">
         <div class="hero-background">
             <img src="images/background-image.jpg" alt="Background">
         </div>
@@ -114,7 +114,7 @@
     </section>
 
     <!-- Based in Christchurch Section -->
-    <section class="christchurch-section">
+    <section class="christchurch-section" id="about">
         <div class="christchurch-container">
             <div class="christchurch-image">
                 <img src="images/christchurch-building.jpg" alt="Colorful buildings in Christchurch">
@@ -133,16 +133,17 @@
     </section>
 
     <!-- Contact Form Section -->
-    <section class="contact-section">
+    <section class="contact-section" id="contact">
+        <div class="contact-background" aria-hidden="true"></div>
         <div class="contact-container">
             <div class="contact-content">
-                <h2 class="contact-title">Talk to one of our experts</h2>
+                <h2 class="contact-title">Talk to one of our <br> experts</h2>
                 <div class="contact-underline"></div>
                 <p class="contact-description">
-                    We believe every business should have access to great financial leadership.
+                    We believe every business should have<br>access to great financial leadership.
                 </p>
                 <p class="contact-description">
-                    Fill out our contact form, and a member of our team will get back to you within 24 hours.
+                    Fill out our contact form, and a member of <br> our team will get back to you within 24 <br> hours.
                 </p>
             </div>
             
@@ -170,14 +171,14 @@
                     
                     <div class="form-group">
                         <label for="enquiry" class="form-label">Your enquiry</label>
-                        <textarea id="enquiry" name="enquiry" class="form-textarea" placeholder="How can we help you?" rows="6"></textarea>
+                        <textarea id="enquiry" name="enquiry" class="form-textarea" placeholder="How can we help you?" rows="4"></textarea>
                     </div>
                     
                     <div class="recaptcha-badge">
+                        <span class="recaptcha-text">protected by reCAPTCHA</span>
                         <div class="recaptcha-logo">
                             <img src="images/recaptcha-logo.png" alt="reCAPTCHA">
                         </div>
-                        <span class="recaptcha-text">protected by reCAPTCHA</span>
                     </div>
                     
                     <button type="submit" class="submit-button">Send Message</button>
@@ -185,6 +186,70 @@
             </div>
         </div>
     </section>
+
+    <!-- Contact details and legal footer -->
+    <footer class="site-footer">
+        <div class="footer-header">
+            <a class="footer-logo" href="#home" aria-label="Ainger Tomlin home">
+                <img src="images/logo-white.svg" alt="Ainger Tomlin Chartered Accountants">
+            </a>
+            <nav class="footer-nav" aria-label="Footer navigation">
+                <ul class="footer-nav-list">
+                    <li><a class="footer-nav-link" href="#home">Home</a></li>
+                    <li><a class="footer-nav-link" href="#services">Services</a></li>
+                    <li><a class="footer-nav-link" href="#about">About</a></li>
+                    <li><a class="footer-nav-link" href="#resources">Resources</a></li>
+                    <li><a class="footer-nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="footer-content">
+            <p class="footer-tagline">Dependable accounting and advisory services you can trust.</p>
+
+            <div class="footer-details">
+                    <p>
+                        <span class="phone-email">
+                        <strong>Phone:</strong>
+                        <br>
+                        <a href="tel:033430046" 
+                        style="font-weight: normal;
+                        text-decoration: none; "
+                        >
+                        <span class="phone">
+                            03 343 0046
+                        </span>
+                        </a>
+                    </p>
+                    <p>
+                        <strong>Email:</strong>
+                        <br>
+                        <a href="mailto:email@aingertomlin.co.nz"
+                        style="text-decoration: none;"
+                        >
+                        <span class="email">
+                            email@aingertomlin.co.nz
+                        </span>
+                        </a>
+                        </span>
+                    </p>
+                <p>
+                    <span class="office-hours">
+                        <strong>Please note our office hours:</strong>
+                        <br>
+                        Monday to Thursday 8am – 5pm
+                        <br>
+                        Friday 8am – 12 noon
+                    </span>
+                </p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <span class="footer-legal">Terms &amp; Conditions</span>
+            <p>Copyright © 2025 Ainger Tomlin Website by <strong>Black Sheep</strong></p>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>
