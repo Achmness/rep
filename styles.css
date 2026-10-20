@@ -32,14 +32,15 @@ p {
     align-items: center;
     width: 82%;
     margin: 0 auto;
-    min-height: 12vh;
+    min-height: 96px;
     gap: 2vw;
 }
 
 .logo {
     display: flex;
     align-items: center;
-    margin-left: 0;
+    margin-left: 5px;
+    margin-bottom: 7px;
 }
 
 .logo-image {
@@ -48,8 +49,8 @@ p {
 }
 
 .logo-image img {
-    height: 5.5vh;
-    width: auto;
+    height: auto;
+    width: 250px;
     display: block;
     cursor: pointer;
 }
@@ -58,6 +59,8 @@ p {
 .nav {
     display: flex;
     align-items: center;
+    margin-right: 15px;
+    margin-bottom: 7px;
 }
 
 /* Mobile navigation state */
@@ -105,9 +108,11 @@ body.mobile-view .nav-link {
 
 .nav-link {
     color: #ffffff;
+    font-family: 'Libre Franklin', sans-serif;
     text-decoration: none;
-    font-size: 1.35vw;
-    font-weight: 680;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
     letter-spacing: 0.019em;
     transition: opacity 0.3s ease;
 }
@@ -172,40 +177,50 @@ body.mobile-view .nav-link {
 }
 
 .hero-subtitle {
-    font-size: calc(0.8rem + 1vw) !important;
-    font-weight: 400;
+    font-size: 32px !important; 
     letter-spacing: 0.5px;
     color: #ffffff;
+    margin-top: 7px;
     opacity: 0.95;
+    font-family: 'Libre Franklin', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
 }
 
 .hero-title {
     font-family: Georgia, 'Times New Roman', serif;
     width: 100%;
-    font-size: calc(1.25rem + 3vw) !important;
-    font-weight: 400;
+    font-size: 64px !important;
+    font-style: normal;
+    font-weight: normal;
     line-height: 1.2;
     color: #ffffff;
     max-width: 900px;
     letter-spacing: 0.5px;
     overflow-wrap: anywhere;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    letter-spacing: 1px;
 }
 
 .hero-cta {
     display: inline-flex;
     align-items: center;
     gap: 10px;
-    color: #ff6b35;
-    background-color: #1A2332;
+    color: rgba(245, 128, 38, 1) !important;
+    background-color: rgba(15, 23, 42, 1.0);
     border: 1px solid #2A3442;
     border-radius: 9999px;
     max-width: 100%;
-    font-size: calc(0.75rem + 0.5vw) !important;
+    font-size: 17px !important;
     font-weight: 600;
+    font-style: normal;
     text-decoration: none;
     cursor: pointer;
     margin-top: 15px;
-    padding: 0.6em 2vw;
+    margin-left: 16px;
+    padding: 16px 32px;
     letter-spacing: 0.3px;
     transition: gap 0.3s ease, background-color 0.3s ease;
 }
@@ -215,11 +230,12 @@ body.mobile-view .nav-link {
 }
 
 .arrow {
-    font-size: 20px;
-    display: inline-flex;
-    align-items: center;
-    transition: transform 0.3s ease;
+  color: #ff8c00;
+  font-size: 24px;
+  height: 12px;
+  font-weight: 12px; 
 }
+
 
 .hero-cta:hover .arrow {
     transform: translateX(5px);
@@ -242,11 +258,13 @@ body.mobile-view .nav-link {
 
 .services-title {
     font-family: Georgia, 'Times New Roman', serif;
-    font-size: calc(1.2rem + 0.8vw);
-    font-weight: 400;
+    font-size: 36px;
+    font-weight: normal;
+    font-style: normal;
     color: #1A2332;
     margin-bottom: 1.4vw;
-    letter-spacing: 0.3px;
+    letter-spacing: 0px;
+    line-height: 1.2;
 }
 
 .services-underline {
@@ -331,15 +349,18 @@ body.mobile-view .nav-link {
     background-color: #ffffff;
     min-height: 85vh;
     padding: 8vw 5vw;
+    display: flex;
 }
 
 .christchurch-container {
     max-width: 1400px;
+    flex: 1;
+    min-height: 85vh;
     margin: 0 auto;
     display: flex;
     flex-direction: row-reverse;
     gap: 5vw;
-    align-items: center;
+    align-items: stretch;
     flex-wrap: wrap;
 }
 
@@ -348,6 +369,7 @@ body.mobile-view .nav-link {
     min-width: 0;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: 2vw;
     padding-left: 0;
 }
@@ -355,6 +377,7 @@ body.mobile-view .nav-link {
 .christchurch-image {
     flex: 1 1 28em;
     min-width: 0;
+    display: flex;
 }
 
 .christchurch-title {
@@ -418,7 +441,7 @@ body.mobile-view .nav-link {
 
 .christchurch-image img {
     width: 100%;
-    height: auto;
+    height: 100%;
     display: block;
     object-fit: cover;
     border-radius: 4px;
@@ -438,6 +461,7 @@ body.mobile-view .nav-link {
     inset: 0;
     z-index: -1;
     background-color: #1a3d5c;
+    background-image: url("images/bgbridge.jpg");
     background-position: center;
     background-size: cover;
 }
